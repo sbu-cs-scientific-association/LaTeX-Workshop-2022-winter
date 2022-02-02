@@ -5,11 +5,25 @@
 
 %\usepackage{fullpage}
 %\usepackage[left=6cm, outer=1cm, top=1.5in, bottom=0cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
 \usepackage{microtype}
 
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{hyperref}
+
+\usepackage{xcolor}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Ce}{\mathbb{C}}
+
+\newcommand{\bast}{(a + b)^n = \sum_{i=0}^{n} a^i \times b^{n - i}}
+
+%\usepackage{fontspec}
+%\setmainfont{UnPen}
 
 \title{An abstract study about some special aspects and applications in Computer Science}
 \author{Patrick Starfish}
@@ -25,12 +39,105 @@
 	\tableofcontents\newpage
 	\section{Introduction}
 	\subsection{First intro}
-	\textbf{Lorem ipsum} \textit{dolor sit amet}, consectetur adipiscing elit. Nulla tincidunt arcu nec eros euismod, vitae elementum mi tincidunt. Sed vitae venenatis sapien. Donec accumsan massa interdum, faucibus nunc nec, pulvinar arcu. Aliquam erat volutpat. Morbi commodo vulputate nisl, non eleifend ante sodales ut. In sagittis nulla non ante pharetra scelerisque. Integer lobortis et ligula quis euismod. Donec pulvinar metus metus, a gravida sem euismod ac.
+	\textbf{Lorem ipsum} \textit{dolor sit amet}, consectetur adipiscing elit. Nulla tincidunt arcu nec eros euismod, vitae elementum mi tincidunt. Sed vitae venenatis sapien. Donec accumsan massa interdum, faucibus nunc nec, pulvinar arcu. Aliquam erat volutpat. $\forall x $ Morbi commodo vulputate nisl, non eleifend ante sodales ut. In sagittis nulla non ante pharetra scelerisque. Integer lobortis et ligula quis euismod. Donec pulvinar metus metus, a gravida sem euismod ac.$$ x = 2 $$
+	$$\not x \not< y, x \leq y, x > y, x \geq y , x = y, x \not= y$$
+	
+	$$x \in X, A \ni a, x \not\in X, A \not\ni a$$
+	
+	$$\forall x \in X, \exists a \in B$$
+	
+	$$a_0, a_1, a_2, \cdots, a_n, \cdots, a_{2n}$$
+	
+	$$a^2 + b^2 = c^2$$
+	
+	$$(\vec{a} + \vec{b})^2 - (\vec{a} - \vec{b})^2 = 4 \times a\cdot b$$
+	
+	$$\vec{a} = 2\hat{i} + 3\hat{j}$$
+	
+	$$F_e = k \frac{q_1 \times q_2}{r^2}$$
+	
+	$$ \rightarrow , \Rightarrow , \leftarrow, \Leftarrow, \Leftrightarrow, \leftrightarrow$$
+	
+	$$\mathbb{N} , \mathbb{R}, \mathbb{C}, \mathbb{P}$$
+	$$\mathcal{R}, \mathcal{C}$$
+	$$\alpha, \beta, \gamma, \zeta ,\delta $$
+	$$\Delta \Theta \Omega\varOmega\omega $$
+	
+	$$A \cap B, A \cup B, \bigcup_{i=0}^{n} A_i$$
+	
+	$$\binom{10}{3}$$
+	
+	$$\sum_{i=0}^n a_i$$
+	
+	$$(a + b)^n = \sum_{i=0}^{n} a^i \times b^{n - i}$$
+	
+	$$\N , \R, \Ce$$
+	
+	$$
+	\begin{bmatrix}
+		1 & 0 & 0\\
+		0 & 1 & 0\\
+		0 & 0 & 1
+	\end{bmatrix}
+	$$
+	
+	$$
+	\begin{pmatrix}
+	1 & 0 & 0\\
+	0 & 1 & 0\\
+	0 & 0 & 1
+	\end{pmatrix}
+	$$
+	
+	$$\int\limits_{0}^{\infty} f(x)dx$$
+	
+	$$I_{m-2, n+2} = \int \sin^{m-2}x \cos^{n+2}xdx$$
+	
+	\begin{equation}
+		\begin{bmatrix}
+			2 & 1\\
+			0 & 3
+		\end{bmatrix}_{2 \times 2}
+		\times
+		\begin{bmatrix}
+			1 & 0\\
+			3 & 2
+		\end{bmatrix}_{2 \times 2}
+		=
+		\begin{bmatrix}
+			5 & 2\\
+			9 & 6
+		\end{bmatrix}^4_{2 \times 2}
+	\end{equation}
+	
+	\begin{equation}
+		f(x) = \begin{cases}
+			x^2 \text{ if }x \geq 0 \\
+			-x \text{ if }x < 0
+		\end{cases}
+	\end{equation}
+	
+	\begin{equation}
+		f^{}(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
+	\end{equation}
+	
+	\begin{align*}
+		(x, y) \in A \times (B \cup C) &\leftrightarrow (x \in A) \text{ and } (y \in B \cup C) \\ 
+		&\leftrightarrow (x \in A) \text{ and } ((y \in B) \text{ or } (y \in C))\\
+		&\leftrightarrow ((x \in A) \text{ and } (y \in B)) \text{ or } ((x \in A) \text{ and } (y \in C))\\
+		&\leftrightarrow((x, y) \in A \times B) \text{ or } ((x, y) \in A \times C) \\
+		&\leftrightarrow((x, y) \in (A \times B) \cup (A \times C))
+	\end{align*}
+	
 	
 	\subsection{Second intro}
 	\begin{center}
 		In egestas sem non urna eleifend vulputate nec ac felis. Maecenas vestibulum convallis dignissim. Morbi ornare erat et nulla elementum, tincidunt scelerisque libero aliquam. Proin tincidunt eu urna ac sagittis. Curabitur egestas nulla mauris, ut gravida arcu accumsan vitae. Sed elementum mollis placerat. Phasellus eu nunc ultricies odio laoreet consequat in sit amet urna. Quisque mollis nunc sapien, a tristique sapien consectetur in. Etiam scelerisque massa sed turpis posuere lacinia. Maecenas nec odio fermentum, maximus dui id, vehicula neque.
 	\end{center}
+	
+	\begin{equation}
+		y = x^2
+	\end{equation}
 	
 	\subsubsection{The first of second intro}
 	\begin{flushright}
@@ -43,7 +150,8 @@
 	\end{flushleft}
 	
 	\section*{Number Theory}
-	Pellentesque congue luctus elementum. Nam sodales nec justo nec blandit. Maecenas mattis, nulla id accumsan feugiat, sapien risus cursus velit, ut luctus quam ipsum sit amet ligula. Aliquam erat volutpat. Sed semper risus laoreet neque dignissim, sed pretium eros commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas pretium bibendum commodo. Nullam sed urna non tellus iaculis hendrerit. Ut ut lectus suscipit, semper risus a, tristique felis.
+	{\color{magneta}
+		Pellentesque congue luctus elementum. Nam sodales nec justo nec blandit. Maecenas mattis, nulla id accumsan feugiat, sapien risus cursus velit, ut luctus quam ipsum sit amet ligula. Aliquam erat volutpat. Sed semper risus laoreet neque dignissim, sed pretium eros commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas pretium bibendum commodo. Nullam sed urna non tellus iaculis hendrerit. Ut ut lectus suscipit, semper risus a, tristique felis.}
 	
 	Sed feugiat, tortor nec vulputate vehicula, nunc purus tempus turpis, at porttitor lorem nulla varius ligula. Donec est libero, aliquet vel pretium eget, sodales ac quam. Sed tempor est tellus, rutrum tempus urna luctus id. Nulla elementum, tellus nec sollicitudin accumsan, urna leo porta libero, quis laoreet ligula elit in ipsum. Sed porta elementum massa eu egestas. Praesent pharetra lobortis vestibulum. Donec at dolor at arcu iaculis vestibulum eu ac lorem. Mauris eget volutpat nisl. Mauris pellentesque mauris et pellentesque ornare. Duis iaculis lacus tempus hendrerit mattis. Duis purus lectus, dapibus at elementum eget, finibus eget ipsum.	
 	\begin{figure}[h!]
@@ -56,6 +164,10 @@
 	Donec non pulvinar nisl, ornare maximus diam. Aenean ullamcorper lectus nec vestibulum laoreet. Sed ultrices nec libero vel pulvinar. Curabitur blandit mauris in sollicitudin tempus. Pellentesque tellus neque, rutrum vitae fringilla sit amet, pharetra a leo. Etiam sodales nec nibh vitae rutrum. Sed vitae sollicitudin leo. Nam eros dolor, auctor ac mollis ornare, luctus at lacus.
 	
 	Aliquam erat volutpat. Phasellus facilisis dignissim tincidunt. Mauris vitae est dolor. Nullam quis odio tincidunt, placerat arcu et, consectetur lectus. Cras risus enim, consequat sit amet facilisis sed, blandit ac tellus. Morbi ac magna eu dui malesuada commodo a a mauris. Maecenas porttitor convallis egestas. Maecenas nisl libero, aliquam at lacus a, pellentesque vulputate nisl. Praesent ac lacus at diam fermentum condimentum. Vestibulum vehicula eros tellus, non pretium ante congue id. Nunc eu ipsum et orci maximus sagittis. Cras dictum viverra dolor quis vulputate.
+	
+	\begin{equation}
+		y = \sqrt[4]{x}
+	\end{equation}
 	
 	Curabitur ac ante ut sapien ultricies accumsan vel at dolor. Curabitur varius ultricies mauris eget aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue sagittis est, sit amet pellentesque augue tempor non. Cras fermentum nibh non velit fermentum tristique. Donec vestibulum aliquam dolor in sagittis. Mauris venenatis imperdiet fermentum. Curabitur id volutpat nibh. Proin sit amet hendrerit odio. Vivamus congue iaculis metus ac bibendum. Donec sit amet ex purus. Cras tincidunt mattis rutrum. Integer quis laoreet nisl, ac fermentum orci. Aliquam sagittis nec eros sit amet facilisis.
 	
@@ -74,6 +186,8 @@
 	
 	\section{Graph Theory}
 	Aliquam convallis eget justo ac gravida. Nam iaculis enim ut sapien varius mollis. Etiam tristique felis nec lectus ultrices, at ultricies leo luctus. Quisque gravida mauris vitae mi aliquet faucibus. Etiam at condimentum eros. Aliquam vestibulum at eros non suscipit. Cras vel sem mi. Curabitur bibendum ipsum nec massa rutrum, faucibus mattis elit suscipit. Nulla fermentum vestibulum eros, eu dictum ex aliquet tempus.
+	
+	$$ \bast $$
 	
 	Sed at ultrices quam. Maecenas mattis, orci sed auctor egestas, tortor tellus pellentesque dui, vel egestas arcu urna at elit. Nam non porttitor lacus. Duis sit amet pellentesque eros, et mattis nisi. Nam auctor mollis orci a tincidunt. Cras non egestas est. Nam et augue justo. Nullam eget pharetra dui. In vestibulum nisi non velit ullamcorper mattis sed vitae odio. Pellentesque dapibus arcu in libero dictum, non hendrerit dolor suscipit. Nullam luctus lacinia quam sed accumsan.
 	
