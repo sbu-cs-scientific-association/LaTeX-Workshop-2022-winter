@@ -1,0 +1,253 @@
+\documentclass[a4paper,12pt]{article}
+
+%\usepackage{fullpage}
+%\usepackage[top=1cm, bottom=10cm, left=5cm, right=0cm]{geometry}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% This document is made by texstudio under texlive engine.
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+
+\title{An abstract study about different aspects of sea}
+\author{Patrick Starfish}
+\date{January 18, 2022}
+
+\pagenumbering{roman}
+
+\newcommand{\twosq}{$$(a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^k b^{n-k}$$}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+
+
+%\setlength{\parindent}{2cm}
+
+
+\begin{document}
+	\maketitle
+	%\chapter{Hello to sea fishes}
+	\tableofcontents
+	\section[intro]{Introduction}
+	
+	\begin{align*}
+		(x, y) \in & (A \times B) \cup (B \times A) \\
+		&\Rightarrow (x, y) \in (A \times B) \text{ or } (x, y) \in (B \times A) \\
+		&\Rightarrow \{ x \in A, y \in B \} \text{ or } \{x \in B, y \in A\} \\
+		&\Rightarrow (x, y) \in (A \cup B) \times (A \cup B)
+	\end{align*}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi varius, venenatis libero et, commodo enim. Donec facilisis scelerisque libero, a finibus est venenatis sed. Mauris vel elit ullamcorper, tincidunt libero id, imperdiet quam. Mauris molestie porta ipsum, cursus tincidunt sapien. Praesent et convallis nibh. Aliquam elementum mollis sapien, a dapibus ipsum ullamcorper nec. Phasellus aliquet faucibus condimentum. Sed vitae tincidunt nulla. Phasellus suscipit enim arcu, eget ultricies elit malesuada vel. Phasellus pulvinar leo a nulla accumsan condimentum. Proin tincidunt, lectus id convallis ultricies, enim nulla pharetra nulla, id eleifend sapien massa in nisl. Proin ligula arcu, sagittis in scelerisque vitae, dapibus at arcu.
+	
+	\begin{equation}
+		F_e = k\frac{q_1 \times q_2}{r^2}
+	\end{equation}
+	
+	\section{Math Mode Commands}
+	
+	$$x < y, x \leq y, x > y, x \geq y, x = y, x \not = y,1 \geq x \gg 0, x \ll 1$$
+	$$(A \wedge  B) \vee C$$
+	$$x \in S, N \ni y, x \not\in S, N \not\ni y$$
+	
+	$$A \subset B, A \subseteq B, A \not \subset B$$
+	
+	$$\vec{a} + \hat{b} = \hat{c} $$
+	
+	$$\vec{\hat{a}}, \hat{\vec{a}}$$
+	
+	$$a_1, a_2, \cdots, a_n$$
+	
+	$$b_{total}$$
+	
+	$$a^2 + b^2 = c^2$$
+	
+	$$f^{a_n} = n$$
+	
+	$$\binom{n}{k} = \frac{n!}{k! \times (n - k)!}$$
+	
+	$$\int_{1}^{\infty} e^x(f(x) + f^{'}(x) ) \cdot dx = e^xf(x) + C$$
+	$$\int\limits_{1}^{\infty} e^x(f(x) + f^{'}(x) ) \cdot dx = e^xf(x) + C$$
+	
+	$$
+	\begin{bmatrix}
+	1 & 2 & 3 \\
+	4 & 5 & 6 \\
+	7 & 8 & 9
+	\end{bmatrix}
+	$$
+	
+	$$
+	\begin{pmatrix}
+	1 & 2 & 3 \\
+	4 & 5 & 6 \\
+	7 & 8 & 9
+	\end{pmatrix}
+	$$
+	
+	$$\begin{pmatrix}
+	1 & 2\\
+	3 & 4
+	\end{pmatrix} \times \begin{pmatrix}
+	1 & 0\\
+	1 & 0
+	\end{pmatrix} = \begin{pmatrix}
+	3 & 0\\
+	7 & 0
+	\end{pmatrix}^2$$
+	
+	$$(a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^k b^{n-k}$$
+	
+	$$n \in \mathbb{N}, r \in \mathbb{R}, c \in \mathbb{C}, d \in \mathbb{D}$$
+	
+	$$\N \subseteq \R$$
+	
+	$$\lim_{x \to \infty} \sin(x) \text{ is not defined.}$$
+	
+	$$\rightarrow \leftarrow \Rightarrow \Leftarrow \Leftrightarrow \leftrightarrow \xleftarrow[bye]{hello}$$
+	\subsection{more intro}
+	
+	Morbi ullamcorper gravida nulla ut iaculis. Ut facilisis quis urna a accumsan. In dignissim risus ac magna vestibulum laoreet. Etiam turpis augue, faucibus vel eros a, blandit dignissim purus. Aenean et massa non quam lacinia molestie. Aenean condimentum massa ac feugiat suscipit. Vivamus nunc arcu, gravida non placerat vel, finibus nec nisl. Nunc tortor massa, consectetur sed elit a, egestas dictum sapien. Maecenas non pulvinar eros, et maximus urna. Integer ante lectus, porta nec mattis id, suscipit ac metus. Sed lacinia imperdiet ullamcorper. Nullam condimentum sed urna eu bibendum. Fusce commodo ante eu mauris bibendum sagittis. Nulla dictum at mauris eget placerat. Ut in tellus rhoncus, facilisis tortor a, laoreet massa. \(f(x) = 2\)
+	$$ 2X + 2 = 3 $$
+	
+	\input{title.tex}
+	\input{sea.tex}
+	\section{Ocean}
+	
+	Curabitur mollis est odio, vel accumsan felis finibus consequat. Morbi sed tincidunt sapien. Sed pulvinar erat non mauris pharetra hendrerit. Etiam volutpat nunc et nunc convallis ultrices. Quisque vehicula commodo lobortis. Donec eget ipsum congue, vestibulum lectus vitae, feugiat quam. Sed feugiat urna venenatis, ornare dolor in, molestie erat. Sed congue nunc sit amet bibendum egestas. Integer fermentum felis vel lacus tempor, nec cursus leo vestibulum.
+	
+	Sed at dui non ex varius venenatis. Vivamus pretium sem volutpat orci elementum, lacinia rutrum ante dapibus. In mi nunc, ullamcorper sit amet bibendum ac, rhoncus ut leo. In dapibus tellus turpis, eget laoreet lorem mattis sollicitudin. Sed vehicula nunc ac odio commodo consequat. Maecenas convallis ornare velit at interdum. Duis congue pharetra suscipit. Aliquam ultricies, orci quis cursus egestas, tellus nulla vehicula massa, nec convallis lacus nisi a mi. Morbi iaculis mi ut auctor bibendum. Donec vulputate luctus mauris. Nulla sit amet nibh eget erat sagittis feugiat. Praesent sollicitudin nunc ante, non maximus dolor fermentum vel.
+	
+	Sed sagittis massa at enim consectetur, eget tempus felis vulputate. Maecenas tristique ultricies venenatis. Morbi vitae erat sem. Etiam sit amet lectus eu eros interdum fringilla. Praesent mattis enim et lacus tempus hendrerit. Nunc ornare vitae eros ac vulputate. Nam sed lorem mattis, aliquam felis nec, elementum tortor. Duis eu gravida metus. Integer sed magna ut augue tincidunt interdum nec et felis. Nullam suscipit sagittis lorem at volutpat. Donec sed interdum purus, vel cursus risus. Fusce ligula nunc, tincidunt a urna ac, tincidunt feugiat ligula. Pellentesque auctor metus non urna tristique, id fringilla leo euismod.
+	
+	Nulla facilisi. Sed condimentum urna quis elit cursus, ut mollis ante viverra. Duis fermentum auctor tortor a faucibus. Nam vitae dignissim mauris. Phasellus vel justo non orci elementum pellentesque. Aenean non aliquet dui, in porttitor est. Aliquam ut dui ullamcorper, vulputate orci quis, varius augue. Cras sed elementum elit. Duis et blandit metus, in molestie quam. Suspendisse vehicula, lectus sit amet pretium tempor, lacus dui sagittis dui, a ultrices risus purus ac est. Donec vel ultricies dolor, at faucibus nisi. Duis sed est eget erat dignissim mollis. Aliquam ultricies odio vitae tellus efficitur dignissim. Suspendisse id fermentum purus, at euismod nibh. Suspendisse ac condimentum arcu, eu rhoncus nisl.\newpage
+	
+	
+	
+	
+	
+	
+	
+	Vestibulum eget ipsum nec augue posuere ornare. Proin non condimentum velit. Vestibulum ultrices erat sem, a venenatis orci elementum ac. In pellentesque mi ut purus volutpat sollicitudin. Pellentesque consectetur et felis ut rhoncus. Morbi odio sapien, dignissim eu ipsum ut, gravida interdum tortor. Vivamus cursus felis a nibh tincidunt, eget ullamcorper turpis dictum.
+	
+	Proin facilisis a odio sed tincidunt. Nulla ac pretium nunc, quis dapibus dolor. Donec ut lectus felis. Donec ullamcorper leo feugiat diam eleifend, quis dignissim arcu viverra. Aenean sit amet mollis mauris. Maecenas tincidunt a dui id porttitor. Vivamus vestibulum ligula vel porta fringilla. Nunc tincidunt, nibh ut maximus porttitor, leo elit mattis justo, et lobortis dolor velit at ante. Sed tempus ex quam, non lacinia ex placerat mollis. Ut at tincidunt odio. Donec congue massa leo, id pellentesque risus porta eget. Cras dictum, purus nec luctus pellentesque, nunc enim imperdiet ante, sit amet mattis magna est eu enim. Vestibulum felis orci, mollis ut quam commodo, varius pellentesque erat.
+	
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at turpis mi. Aliquam erat volutpat. Suspendisse enim odio, pellentesque et ipsum ut, egestas porttitor ex. Vivamus maximus a est eget sollicitudin. Phasellus facilisis augue sed tincidunt cursus. Nulla aliquam laoreet orci ac blandit. Etiam efficitur leo neque. Fusce vel massa id magna lobortis maximus et nec turpis. Praesent ut augue vitae nisl aliquam consequat. Mauris eu arcu non nunc fringilla scelerisque. Nulla gravida fermentum rhoncus.
+	
+	Integer nec diam lectus. Quisque luctus eu arcu id fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed iaculis libero, vel egestas lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed semper neque venenatis sem aliquam tincidunt. Pellentesque diam arcu, mollis et leo et, pellentesque semper diam.
+	
+	Integer nec leo ac urna ullamcorper commodo eget semper risus. Mauris placerat rhoncus tristique. Sed euismod urna erat, in convallis justo molestie sit amet. Aliquam ac ligula ac nisi tincidunt volutpat. Sed eget lobortis diam, in convallis mauris. Mauris scelerisque tortor eu mauris tristique, vitae pharetra metus lobortis. Suspendisse facilisis arcu rhoncus tellus ornare semper. Nulla vitae vehicula augue. Vestibulum sed urna non leo vehicula placerat eget et mi. Maecenas eleifend facilisis risus. Proin convallis faucibus purus at ultrices. Nulla consectetur eu est vitae tempus. Maecenas cursus felis ut egestas dignissim. Suspendisse fermentum mattis elit et malesuada.
+	
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae orci ac nisl iaculis laoreet. Vestibulum velit magna, auctor vel porta sit amet, egestas eget magna. Donec consequat tempus purus, quis ultrices nisl fermentum vel. Aliquam in nunc eget mauris sodales feugiat non ac lorem. Aliquam erat volutpat. Etiam congue mattis mauris, pretium volutpat leo efficitur eget. Pellentesque diam turpis, maximus vel porttitor vitae, scelerisque vitae sem. Donec porta dui quis urna sodales pharetra. Suspendisse sit amet quam ut velit vestibulum venenatis ac non urna. Mauris eu commodo nulla. Integer eget tempus lectus. Pellentesque euismod orci vitae commodo mattis. Curabitur leo enim, fringilla in ultricies ac, porta quis arcu.
+	
+	Quisque ex tellus, maximus a semper vel, euismod eu eros. Nullam at enim id purus euismod pulvinar et eget ante. Nullam ac nisi elementum, faucibus libero eget, elementum lectus. Donec varius orci orci, vitae porttitor mi feugiat vitae. Donec sed risus ac nunc consectetur facilisis at sodales nunc. Nunc vel suscipit nibh, quis vestibulum diam. Vestibulum viverra porttitor neque, a luctus arcu feugiat eget. Vivamus tristique eros sed tortor consectetur eleifend et a elit. Praesent placerat ut tellus vitae tristique. Aliquam dapibus enim ac scelerisque sodales. Proin fermentum nisl sed mollis auctor.
+	
+	Proin orci nulla, lobortis eget dolor eget, sodales lobortis tortor. Duis sem odio, facilisis sed sodales eu, vestibulum vitae ipsum. Nam efficitur eu arcu interdum porttitor. Nam neque dolor, tempus eget dignissim vel, viverra vitae justo. Vivamus pellentesque felis tellus, nec venenatis dui tristique sed. Aenean dapibus turpis vitae mi rhoncus ultricies. Sed porttitor fermentum nisi, ac ultrices eros condimentum sit amet. Proin sodales sapien aliquet diam dignissim iaculis. Nullam in dapibus libero. Donec vestibulum purus ut ligula molestie posuere.
+	
+	Proin nulla dolor, pulvinar sed ante eget, sollicitudin lacinia elit. Duis dignissim sem ac libero consectetur, ac suscipit massa lacinia. Vivamus fermentum nunc sit amet lacus congue, vitae maximus neque condimentum. Praesent rhoncus lectus in lectus tincidunt dictum. Vestibulum venenatis enim sapien, vel interdum nisi accumsan nec. Fusce elementum arcu ultrices dui porttitor gravida. Fusce dignissim suscipit turpis at mollis. Suspendisse accumsan turpis at enim facilisis, vitae iaculis nisl venenatis. Vestibulum vitae congue enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed cursus sit amet mi eu vestibulum. Suspendisse in mi ac nulla aliquam interdum nec vitae nisl. Praesent quis risus diam. Aliquam purus magna, malesuada in mauris eu, congue pellentesque dui.
+	
+	Quisque nec maximus lacus. Ut laoreet neque sed massa ornare, sit amet varius orci laoreet. Aenean lacinia dui a efficitur convallis. Duis id nisi eget enim sagittis tristique a ac quam. Vivamus nec malesuada dolor, non luctus metus. Donec nibh dolor, laoreet nec laoreet id, tristique finibus lacus. Vivamus vestibulum neque nunc, non tincidunt tellus molestie ac. Sed efficitur purus ut nulla ultricies ornare. Vestibulum mi urna, molestie vitae risus eget, efficitur malesuada ligula. In vulputate commodo dolor, a auctor eros. Nulla erat est, ullamcorper sit amet sapien sed, auctor rhoncus lorem. Fusce vitae urna at nisi ullamcorper accumsan. Sed et purus lectus. Fusce id dui nulla. Nam ex libero, commodo quis eros in, lobortis elementum massa.
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=10cm,height=5cm]{images/f1.jpg}
+		\caption{A picture of sea plants}
+		\label{fig:1}
+	\end{figure}
+	
+	Nunc pretium sem nulla, eu sagittis erat convallis et. Cras tincidunt elit nec quam faucibus, porta vulputate elit semper. Nunc tristique, est eu mattis venenatis, ipsum tellus interdum odio, sit amet scelerisque urna velit rhoncus massa. Cras porttitor et tortor in ultricies. Aenean quis lacus sem. Nam imperdiet vehicula ipsum, semper aliquet erat pretium sit amet. Suspendisse mollis ultrices sapien, id fringilla purus. In ligula leo, consectetur at iaculis semper, tristique et elit. Nam risus felis, aliquet non suscipit vitae, rutrum in ipsum. Proin eget egestas velit, vel consequat elit. Ut vehicula maximus ex quis commodo. Donec dictum purus non ipsum posuere finibus. Vestibulum vel rutrum purus. Cras enim nibh, suscipit ut velit auctor, elementum tempus lorem. Vivamus mollis euismod nibh nec malesuada. Mauris vel est arcu.
+	
+	Fusce in faucibus sapien. Suspendisse sagittis ipsum leo, ut posuere justo vestibulum non. Proin accumsan pharetra sem quis tempus. Fusce ornare scelerisque erat, ac imperdiet enim pellentesque nec. Vestibulum id ante id neque dapibus auctor. Aliquam sit amet sapien ipsum. Sed suscipit, libero nec lobortis dignissim, ligula neque pulvinar nibh, eget tempus erat nisl a erat. Curabitur tincidunt gravida ipsum. Morbi porta iaculis lectus nec placerat. Cras aliquam lobortis enim ac venenatis. Integer rutrum sapien nisi, tempus fringilla felis feugiat at. Suspendisse tincidunt lacinia velit ut vulputate. Quisque nisi velit, placerat vel libero a, maximus varius sem.
+	
+	Morbi sed nisi neque. Nullam a ligula dignissim, tincidunt ante nec, blandit tortor. Morbi accumsan orci et semper congue. Mauris vestibulum erat eu eleifend vestibulum. Vivamus dapibus ex et augue luctus, non ullamcorper neque sagittis. Phasellus finibus vitae magna ut elementum. Pellentesque quis elit posuere, suscipit turpis in, ultrices ante. Maecenas vel est eu est elementum pharetra quis sed ex. Cras nibh nulla, tincidunt sagittis commodo eget, placerat a sem. Donec a mi placerat, ultrices felis sit amet, commodo enim. Donec semper mauris a ligula auctor laoreet. Vivamus rhoncus lacus auctor ipsum dignissim aliquam. Morbi ipsum metus, porttitor quis mollis ut, venenatis vel lorem.
+	
+	Morbi sagittis augue ut ante faucibus, at dapibus ipsum molestie. Donec nec ante laoreet, elementum dolor eu, tincidunt mauris. Vivamus aliquet nec tellus vitae finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque ex at erat congue, id viverra dolor volutpat. Vivamus auctor malesuada facilisis. Nam porta elit quis ipsum aliquet, vestibulum accumsan sapien varius. Integer molestie, nunc quis ultrices imperdiet, risus arcu condimentum urna, vitae ullamcorper purus mi sit amet dolor. Integer vehicula volutpat augue, nec scelerisque ex malesuada ac. Sed pellentesque metus venenatis turpis placerat, eu placerat dolor sodales. Donec suscipit et mauris id porta. Morbi mollis pharetra lacus, sed scelerisque eros ultricies sit amet. Cras sed metus varius, sagittis eros id, bibendum sapien. Nunc diam magna, fringilla nec dolor ac, vulputate mattis turpis.
+	
+	\begin{wrapfigure}{r}{.5\textwidth}
+		\includegraphics[scale=.16]{images/f3.jpeg}
+		\caption{new picture}
+	\end{wrapfigure}
+	
+	Nunc ultrices nibh non lacus iaculis lobortis. Nunc placerat hendrerit orci eget eleifend. Aliquam at lectus est. Vivamus quis mauris eget risus venenatis mollis. Nunc rhoncus vestibulum diam, vitae dignissim tellus tristique non. Etiam posuere sodales est a tempus. Suspendisse et viverra urna, ut sollicitudin risus. Maecenas euismod arcu in neque lobortis ornare. Proin ut varius diam. Vestibulum in arcu sodales, semper erat a, auctor dui. Mauris at sapien metus. Proin ut ultrices diam, at varius turpis.
+	
+	Quisque dignissim dictum augue, in efficitur leo suscipit ut. Duis ligula risus, vehicula non nunc ac, blandit feugiat risus. Aenean eleifend hendrerit interdum. Mauris placerat dictum mi vel consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor ante non pharetra sagittis. Nam et augue et elit consectetur viverra eget nec nisi. Integer mattis magna a orci dictum, vitae pellentesque orci pellentesque. Cras ut tortor vulputate, maximus felis efficitur, molestie dui. Duis vitae lacus vel orci vestibulum condimentum. Nam pharetra dui sed dapibus vestibulum. Suspendisse blandit convallis eleifend.
+	
+	Pellentesque in enim ac augue consectetur venenatis eget eu purus. Sed aliquam fermentum augue vel ultricies. Nam eget gravida ex, in egestas felis. Quisque sed blandit massa. In dignissim condimentum aliquam. Proin ullamcorper ut ipsum vel sodales. Vestibulum consectetur lorem consequat, convallis nisl non, dictum tortor. Donec consectetur sed nunc vitae pretium. Sed tempor felis at ex consequat imperdiet. Vestibulum eu quam sapien. Curabitur est lorem, maximus sed diam non, rhoncus tristique urna. Phasellus varius faucibus laoreet. Proin ut blandit dolor. Duis non purus accumsan massa vulputate pulvinar.
+	
+	\begin{itemize}
+		\item[-] milk
+		\item[*] fruit
+		\begin{itemize}
+			\item apple
+			\item banana
+			\item strawberry
+		\end{itemize}
+		\item cake
+		\item pechpech
+
+	\end{itemize}
+
+	\begin{enumerate}
+		\item milk
+		\item fruit
+		\begin{enumerate}
+			\item apple
+			\item banana
+			\item strawberry
+			\begin{enumerate}
+				\item apple
+				\item banana
+				\item strawberry
+				\begin{enumerate}
+					\item apple
+					\item banana
+					\item strawberry
+				\end{enumerate}
+			\end{enumerate}
+		\end{enumerate}
+		\item cake
+		\item pechpech
+	\end{enumerate}
+
+	\begin{description}
+		\item[test] tozihat e test
+		\item[ksajfd]  akldjfklsd kajsdf klasdlkjasf 
+	\end{description}
+	
+	\textbf{Donec} scelerisque vel libero vel pretium. \textit{Duis} risus elit, pharetra at eros quis, mollis accumsan felis. Morbi in mauris tellus. Cras iaculis in elit vitae vestibulum. Donec sodales lacus non neque pharetra, sit amet aliquet sem cursus. Maecenas in tristique augue. Cras rutrum neque tortor, id sagittis nisi gravida sit amet. Integer egestas lacus erat, id luctus leo efficitur auctor. Curabitur urna sem, scelerisque sit amet arcu laoreet, facilisis luctus sapien. Praesent luctus metus vel feugiat volutpat. In mattis eros sed accumsan blandit. In lacus turpis, finibus quis lobortis in, commodo quis lectus. Mauris a ligula enim. Integer tristique orci sit amet facilisis dictum.
+	
+	\begin{flushright}
+		\scriptsize
+		Ut a tempor sapien. Donec mollis et mi sit amet fringilla. Aliquam eu orci ut orci pharetra laoreet at et dolor. Sed eleifend nunc in sem interdum vehicula. Donec scelerisque ligula auctor, semper massa sed, varius arcu. Nulla eu justo mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas in vestibulum tortor. Nullam eu ipsum at massa feugiat accumsan. Vivamus at erat vel augue accumsan ultrices id sit amet eros.
+	\end{flushright}
+	
+	% \normalsize \small \footnotesize \scriptsize \tiny
+	
+	% \large \Large \LARGE \huge \Huge
+	
+	{\large Quisque} {\Huge pulvinar} {\tiny urna} quam, id bibendum nisi egestas non. Proin id elementum nibh. Maecenas erat massa, ultricies tristique ligula ut, gravida elementum purus. In eget elit ac elit fermentum molestie ac in mi. Cras gravida, ante vel fringilla tempor, diam metus tincidunt orci, eget lobortis turpis risus ac risus. Nullam est est, bibendum sagittis pharetra vel, tempus ut dui. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum nec nisi est. Fusce sit amet aliquam velit. Maecenas finibus accumsan orci id sagittis.
+	
+	Nulla facilisi. Vestibulum lobortis interdum erat, vitae tincidunt augue scelerisque eget. Curabitur nec molestie enim, quis blandit mi. Vestibulum consequat orci iaculis tortor sodales, vitae varius sapien aliquam. Sed suscipit arcu sit amet velit aliquam cursus. Aliquam at ultrices diam. Ut molestie lectus nec leo volutpat, sit amet cursus justo tempor.
+	
+	Nam sed purus ut neque mollis lacinia eu ac turpis. Suspendisse iaculis in \href{mailto:example@gmail.com}{my email} rutrum enim, nec ultrices eros iaculis vel. Etiam bibendum, sapien ac sagittis sodales, mauris ligula rutrum lectus, posuere pulvinar sapien diam ut ante. Phasellus maximus aliquam nulla, nec convallis magna semper sed. Suspendisse id pharetra ex. Sed congue sem ut augue condimentum auctor. Ut vitae venenatis felis. Sed sit amet pretium arcu, id aliquet tellus. Aenean consectetur tristique suscipit. Donec enim lacus, fermentum id nunc vel, bibendum vehicula nibh. Mauris maximus dolor sit amet nisi aliquam, eu bibendum massa hendrerit. Nunc ut luctus est. Mauris dignissim sapien sed est viverra, non blandit dui elementum. Morbi tristique convallis lorem, a dapibus mauris accumsan quis. Etiam non metus non dui porta tristique.
+	
+	table is in section \ref{table:mantegh} in page \pageref{table:mantegh}
+	
+	\begin{tabular}{|cc||c|}
+		\hline
+		\multicolumn{2}{|c||}{p,q} & $p \wedge q$ \\
+		\hline 
+		0 & 0 & 0\\
+		0 & 1 & 0\\
+		1 & 0 & 0\\
+		1 & 1 & 1\\
+		\hline
+	\end{tabular}
+	
+	
+	\begin{quote}
+		We cannot solve our problems with the same thinking we used when we created them
+	\end{quote}
+\end{document}
